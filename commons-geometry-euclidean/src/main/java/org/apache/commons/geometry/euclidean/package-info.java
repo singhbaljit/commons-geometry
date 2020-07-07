@@ -45,7 +45,7 @@
  * has been taken: there is a single class for each dimension that implements
  * both {@link org.apache.commons.geometry.core.Point Point} <em>and</em>
  * {@link org.apache.commons.geometry.core.Vector Vector}. These classes are
- * named <code>Vector?D</code> to reflect the fact that they support the full
+ * named {@code Vector?D} to reflect the fact that they support the full
  * range of vector operations. It is up to users of the library to make the
  * correct distinctions between instances that represent points and those that
  * represent displacements. This approach is commonly used in other geometric

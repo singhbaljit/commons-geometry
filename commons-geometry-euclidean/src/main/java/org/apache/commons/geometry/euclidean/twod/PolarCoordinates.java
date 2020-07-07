@@ -131,13 +131,13 @@ public final class PolarCoordinates implements Spatial {
     /** Test for the equality of two sets of polar coordinates.
      * <p>
      * If all values of two sets of coordinates are exactly the same, and none are
-     * <code>Double.NaN</code>, the two sets are considered to be equal.
+     * {@code Double.NaN}, the two sets are considered to be equal.
      * </p>
      * <p>
-     * <code>NaN</code> values are considered to globally affect the coordinates
+     * {@code NaN} values are considered to globally affect the coordinates
      * and be equal to each other - i.e, if either (or all) values of the
-     * coordinate set are equal to <code>Double.NaN</code>, the set as a whole is
-     * considered to equal <code>NaN</code>.
+     * coordinate set are equal to {@code Double.NaN}, the set as a whole is
+     * considered to equal {@code NaN}.
      * </p>
      *
      * @param other Object to test for equality to this

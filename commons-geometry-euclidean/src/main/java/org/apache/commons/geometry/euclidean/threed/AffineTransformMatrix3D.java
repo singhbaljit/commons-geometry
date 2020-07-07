@@ -28,7 +28,7 @@ import org.apache.commons.numbers.arrays.LinearCombination;
 /** Class using a matrix to represent affine transformations in 3 dimensional Euclidean space.
  *
  * <p>Instances of this class use a 4x4 matrix for all transform operations.
- * The last row of this matrix is always set to the values <code>[0 0 0 1]</code> and so
+ * The last row of this matrix is always set to the values {@code [0 0 0 1]} and so
  * is not stored. Hence, the methods in this class that accept or return arrays always
  * use arrays containing 12 elements, instead of 16.
  * </p>

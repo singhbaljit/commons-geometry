@@ -349,12 +349,12 @@ public class Vector2D extends MultiDimensionalEuclideanVector<Vector2D> {
      * Test for the equality of two vector instances.
      * <p>
      * If all coordinates of two vectors are exactly the same, and none are
-     * <code>Double.NaN</code>, the two instances are considered to be equal.
+     * {@code Double.NaN}, the two instances are considered to be equal.
      * </p>
      * <p>
-     * <code>NaN</code> coordinates are considered to globally affect the vector
+     * {@code NaN} coordinates are considered to globally affect the vector
      * and be equal to each other - i.e, if either (or all) coordinates of the
-     * vector are equal to <code>Double.NaN</code>, the vector is equal to
+     * vector are equal to {@code Double.NaN}, the vector is equal to
      * {@link #NaN}.
      * </p>
      *

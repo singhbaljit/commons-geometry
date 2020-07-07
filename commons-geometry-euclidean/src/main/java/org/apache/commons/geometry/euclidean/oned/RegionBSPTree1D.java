@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.BiConsumer;
 
+import org.apache.commons.geometry.core.Point;
 import org.apache.commons.geometry.core.RegionLocation;
 import org.apache.commons.geometry.core.Transform;
 import org.apache.commons.geometry.core.partitioning.Hyperplane;
@@ -75,7 +76,7 @@ public final class RegionBSPTree1D extends AbstractRegionBSPTree<Vector1D, Regio
     /** Classify a point location with respect to the region.
      * @param x the point to classify
      * @return the location of the point with respect to the region
-     * @see #classify(org.apache.commons.geometry.core.Point)
+     * @see #classify(Vector1D)
      */
     public RegionLocation classify(final double x) {
         return classify(Vector1D.of(x));

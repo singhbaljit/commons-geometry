@@ -82,7 +82,7 @@ public abstract class AbstractBounds<
 
     /** Return true if the given point is strictly within or on the boundary of the bounding box.
      * In other words, true if returned if <code>p<sub>t</sub> &gt;= min<sub>t</sub></code> and
-     * <code>p<sub>t</sub> &lt;= max<sub>t</sub></code> for each coordinate value <code>t</code>.
+     * <code>p<sub>t</sub> &lt;= max<sub>t</sub></code> for each coordinate value {@code t}.
      * Floating point comparisons are strict; values are considered equal only if they match exactly.
      * @param pt the point to check
      * @return true if the given point is strictly within or on the boundary of the instance
@@ -98,7 +98,7 @@ public abstract class AbstractBounds<
      * @param precision precision context used to compare floating point values
      * @return if the given point is within or on the boundary of the bounds, as determined
      *      by the given precision context
-     * @see #contains(EuclideanVector, DoublePrecisionContext)
+     * @see #contains(EuclideanVector)
      */
     public abstract boolean contains(P pt, DoublePrecisionContext precision);
 

@@ -209,7 +209,7 @@ public final class Point2S implements Point<Point2S> {
     /** Test for the equality of two points.
      *
      * <p>If all spherical coordinates of two points are exactly the same, and none are
-     * <code>Double.NaN</code>, the two points are considered to be equal. Note
+     * {@code Double.NaN}, the two points are considered to be equal. Note
      * that the comparison is made using the azimuth and polar coordinates only; the
      * corresponding 3D vectors are not compared. This is significant at the poles,
      * where an infinite number of points share the same underlying 3D vector but may
@@ -219,9 +219,9 @@ public final class Point2S implements Point<Point2S> {
      * exact same underlying 3D vector.</p>
      *
      * <p>
-     * <code>NaN</code> coordinates are considered to affect the point globally
+     * {@code NaN} coordinates are considered to affect the point globally
      * and be equals to each other - i.e, if either (or all) coordinates of the
-     * point are equal to <code>Double.NaN</code>, the point is equal to
+     * point are equal to {@code Double.NaN}, the point is equal to
      * {@link #NaN}.
      * </p>
      *

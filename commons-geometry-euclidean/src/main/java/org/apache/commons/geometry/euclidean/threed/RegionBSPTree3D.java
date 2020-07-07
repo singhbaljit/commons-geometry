@@ -458,7 +458,7 @@ public final class RegionBSPTree3D extends AbstractRegionBSPTree<Vector3D, Regio
     /** Visitor for computing geometric properties for 3D BSP tree instances.
      *  The volume of the region is computed using the equation
      *  <code>V = (1/3)*&Sigma;<sub>F</sub>[(C<sub>F</sub>&sdot;N<sub>F</sub>)*area(F)]</code>,
-     *  where <code>F</code> represents each face in the region, <code>C<sub>F</sub></code>
+     *  where {@code F} represents each face in the region, <code>C<sub>F</sub></code>
      *  represents the centroid of the face, and <code>N<sub>F</sub></code> represents the
      *  normal of the face. (More details can be found in the article
      *  <a href="https://en.wikipedia.org/wiki/Polyhedron#Volume">here</a>.)

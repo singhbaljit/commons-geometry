@@ -111,9 +111,8 @@ public interface Vector<V extends Vector<V>> extends Spatial {
     double distance(V v);
 
     /** Compute the square of the distance between the instance and another vector.
-     * <p>Calling this method is equivalent to calling:
-     * <code>q.subtract(p).getNormSq()</code> except that no intermediate
-     * vector is built</p>
+     * <p>Calling this method is equivalent to calling: {@code q.subtract(p).getNormSq()}
+     * except that no intermediate vector is built</p>
      * @see #normSq()
      * @param v second vector
      * @return the square of the distance between the instance and p

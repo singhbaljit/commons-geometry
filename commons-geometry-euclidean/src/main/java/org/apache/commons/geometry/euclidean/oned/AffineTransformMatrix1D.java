@@ -26,8 +26,8 @@ import org.apache.commons.geometry.euclidean.internal.Vectors;
 /** Class using a matrix to represent affine transformations in 1 dimensional Euclidean space.
 *
 * <p>Instances of this class use a 2x2 matrix for all transform operations.
-* The last row of this matrix is always set to the values <code>[0 1]</code> and so
-* is not stored. Hence, the methods in this class that accept or return arrays always
+* The last row of this matrix is always set to the values {@code [0 1]} and so is not stored.
+ * Hence, the methods in this class that accept or return arrays always
 * use arrays containing 2 elements, instead of 4.
 * </p>
 */
@@ -144,7 +144,7 @@ public final class AffineTransformMatrix1D extends AbstractAffineTransformMatrix
      * the transformation represented by the current instance. This is achieved by
      * creating a new translation transform and pre-multiplying it with the current
      * instance. In other words, the returned transform contains the matrix
-     * <code>B * A</code>, where <code>A</code> is the current matrix and <code>B</code>
+     * {@code B * A}, where {@code A} is the current matrix and {@code B}
      * is the matrix representing the given translation.
      * @param translation vector containing the translation values for each axis
      * @return a new transform containing the result of applying a translation to
@@ -158,7 +158,7 @@ public final class AffineTransformMatrix1D extends AbstractAffineTransformMatrix
      * the transformation represented by the current instance. This is achieved by
      * creating a new translation transform and pre-multiplying it with the current
      * instance. In other words, the returned transform contains the matrix
-     * <code>B * A</code>, where <code>A</code> is the current matrix and <code>B</code>
+     * {@code B * A}, where {@code A} is the current matrix and {@code B}
      * is the matrix representing the given translation.
      * @param x translation in the x direction
      * @return a new transform containing the result of applying a translation to
@@ -172,7 +172,7 @@ public final class AffineTransformMatrix1D extends AbstractAffineTransformMatrix
      * logically after the transformation represented by the current instance.
      * This is achieved by creating a new scale transform and pre-multiplying it with the current
      * instance. In other words, the returned transform contains the matrix
-     * <code>B * A</code>, where <code>A</code> is the current matrix and <code>B</code>
+     * {@code B * A}, where {@code A} is the current matrix and {@code B}
      * is the matrix representing the given scale operation.
      * @param scaleFactor vector containing scale factors for each axis
      * @return a new transform containing the result of applying a scale operation to
@@ -186,7 +186,7 @@ public final class AffineTransformMatrix1D extends AbstractAffineTransformMatrix
      * logically after the transformation represented by the current instance.
      * This is achieved by creating a new scale transform and pre-multiplying it with the current
      * instance. In other words, the returned transform contains the matrix
-     * <code>B * A</code>, where <code>A</code> is the current matrix and <code>B</code>
+     * {@code B * A}, where {@code A} is the current matrix and {@code B}
      * is the matrix representing the given scale operation.
      * @param x scale factor
      * @return a new transform containing the result of applying a scale operation to

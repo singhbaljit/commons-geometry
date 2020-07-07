@@ -63,8 +63,8 @@ public abstract class AbstractAffineTransformMatrix<
 
     /** Return a transform suitable for transforming normals. The returned matrix is
      * the inverse transpose of the linear portion of this instance, i.e.
-     * <code>N = (L<sup>-1</sup>)<sup>T</sup></code>, where <code>L</code> is the linear portion
-     * of this instance and <code>N</code> is the returned matrix. Note that normals
+     * <code>N = (L<sup>-1</sup>)<sup>T</sup></code>, where {@code L} is the linear portion
+     * of this instance and {@code N} is the returned matrix. Note that normals
      * transformed with the returned matrix may be scaled during transformation and require
      * normalization.
      * @return a transform suitable for transforming normals

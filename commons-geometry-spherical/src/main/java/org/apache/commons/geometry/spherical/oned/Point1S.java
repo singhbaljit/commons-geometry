@@ -259,13 +259,13 @@ public final class Point1S implements Point<Point1S> {
     /** Test for the exact equality of two points on the 1-sphere.
      *
      * <p>If all coordinates of the given points are exactly the same, and none are
-     * <code>Double.NaN</code>, the points are considered to be equal. Points with
+     * {@code Double.NaN}, the points are considered to be equal. Points with
      * azimuth values separated by multiples of {@code 2pi} are <em>not</em> considered
      * equal.</p>
      *
-     * <p><code>NaN</code> coordinates are considered to affect globally the vector
+     * <p>{@code NaN} coordinates are considered to affect globally the vector
      * and be equals to each other - i.e, if either (or all) coordinates of the
-     * point are equal to <code>Double.NaN</code>, the point is equal to
+     * point are equal to {@code Double.NaN}, the point is equal to
      * {@link #NaN}.</p>
      *
      * @param other Object to test for equality to this

@@ -330,11 +330,11 @@ public class Vector3D extends MultiDimensionalEuclideanVector<Vector3D> {
      * frame with one of the axes in a predefined direction. The
      * following example shows how to build a frame having the k axis
      * aligned with the known vector u :
-     * <pre><code>
+     * <pre>{@code
      *   Vector3D k = u.normalize();
      *   Vector3D i = k.orthogonal();
      *   Vector3D j = k.cross(i);
-     * </code></pre>
+     * }</pre>
      * @return a unit vector orthogonal to the instance
      * @throws IllegalArgumentException if the norm of the instance
      *      is zero, NaN, or infinite
@@ -406,12 +406,12 @@ public class Vector3D extends MultiDimensionalEuclideanVector<Vector3D> {
      * Test for the equality of two vector instances.
      * <p>
      * If all coordinates of two vectors are exactly the same, and none are
-     * <code>Double.NaN</code>, the two instances are considered to be equal.
+     * {@code Double.NaN}, the two instances are considered to be equal.
      * </p>
      * <p>
-     * <code>NaN</code> coordinates are considered to globally affect the vector
+     * {@code NaN} coordinates are considered to globally affect the vector
      * and be equal to each other - i.e, if either (or all) coordinates of the
-     * vector are equal to <code>Double.NaN</code>, the vector is equal to
+     * vector are equal to {@code Double.NaN}, the vector is equal to
      * {@link #NaN}.
      * </p>
      *
